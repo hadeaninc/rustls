@@ -60,3 +60,6 @@ harness = false
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
+
+[patch.crates-io]
+webpki = { git = " https://github.com/hadeaninc/webpki", branch = "feature/HD-6386/use-rustls-webpki-with-ip-support" }
